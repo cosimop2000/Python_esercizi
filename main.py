@@ -10,5 +10,6 @@ def print_prova():
 
 if __name__ == '__main__':
     print_hi('Cosimo')
+    print_hi("Inter")
     print_prova()
     print('Hello world')
