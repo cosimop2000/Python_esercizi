@@ -27,11 +27,11 @@ def replace_instances(s):
 # made of the first 2 and the last 2 chars from a given a string.
 # If the string length is less than 2, return instead of the empty string.
 
-def compose_string(str):
-    if len(str) < 2:
+def compose_string(strx):
+    if len(strx) < 2:
         return ''
     else:
-        s = str[0:2] + str[-2:]
+        s = strx[0:2] + strx[-2:]
         return s
 
 
@@ -75,3 +75,61 @@ def test_password(password):
     else:
         return False
 
+
+# Write a Python function to reverses a string if its length is a multiple of 4.
+# Otherwise, it returns the original string
+
+def reverse(s):
+    if (len(s) % 4) == 0:
+        return s[::-1]
+    else:
+        return s
+
+
+# Write a program which accepts a string as input and
+# print 'Yes' if the string is 'yes' in any case form
+# (e.g., Yes, YES, yes, yEs...), otherwise print "No"
+
+def normalize(s):
+    if s.upper() == 'YES':
+        print("Yes")
+    else:
+        print('No')
+
+
+# Please write a program which accepts
+# a string from console and print the characters that have even indexes.
+# Remember slicing supports increments!
+
+def even_index(s):
+    if s is not None:
+        return s[::2]
+
+
+# Write a Python program to add 'ing' at the end of a given string.
+# If the given string already ends with 'ing' then add 'ly' instead.
+# If the string length of the given string is less than 3, leave it unchanged.
+
+def concat_ing(s):
+    if len(s) < 3:
+        return s
+    elif s[-3:] == 'ing':
+        return '{}ly'.format(s)
+    else:
+        return '{}ing'.format(s)
+
+
+# Write a Python function to return a string made of
+# 4 copies of the last two characters of a specified string (length must be at least 2)
+
+def four_copies(s):
+    if len(s) >= 2:
+        return s[-2:] * 4
+
+
+# Write a program to split a string on the last occurrence of the delimiter.
+# See the str.rsplit()
+
+def split_delimitate(s, delimitator):
+    if delimitator in s:
+        return s.rsplit(',', 1)

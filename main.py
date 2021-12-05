@@ -15,6 +15,8 @@ def mystring_function():
     ciao = MyString
     MyString.ciaozzz()
 
+    print("\n Esercizi sulle stringhe \n")
+
     print(ciao.converter_int_string(123))
 
     ciao.concatenate("Banana", "fish")
@@ -38,6 +40,23 @@ def mystring_function():
     print(ciao.test_password("cadddddZZZZZZZZZZZZ"))
     print(ciao.test_password("12345678"))
     print(ciao.test_password("cad345ddd"))
+
+    print(ciao.reverse("Dio"))
+    print(ciao.reverse('abcdefgh    '))
+
+    ciao.normalize('banana')
+    ciao.normalize("yEs")
+
+    print(ciao.even_index('banana'))
+    print(ciao.even_index('H1e2l3l4o5w6o7r8l9d'))
+
+    print(ciao.concat_ing('banana'))
+    print(ciao.concat_ing('Os'))
+    print(ciao.concat_ing('reading'))
+
+    print(ciao.four_copies("banana"))
+
+    print(ciao.split_delimitate("ciao,  scemo   , ffffff, campana , medusa", ','))
 
 
 if __name__ == '__main__':
