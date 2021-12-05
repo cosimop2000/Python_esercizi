@@ -56,7 +56,7 @@ def mystring_function():
 
     print(ciao.four_copies("banana"))
 
-    print(ciao.split_delimitate("ciao,  scemo   , ffffff, campana , medusa", ','))
+    print(ciao.split_delimitate("ciao,  scemo   , ffffff, ,   campana , medusa", ','))
 
 
 if __name__ == '__main__':
