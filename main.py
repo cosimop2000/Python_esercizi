@@ -1,4 +1,5 @@
 import MyString
+import MyConditionalStatement
 
 
 def print_hi(name):
@@ -59,6 +60,25 @@ def mystring_function():
     print(ciao.split_delimitate("ciao,  scemo   , ffffff, ,   campana , medusa", ','))
 
 
+def myconditional_function():
+    stat = MyConditionalStatement
+
+    print("\n Esercizi  \n")
+
+    print(stat.square(11))
+
+    stat.compute_100()
+
+    stat.compute(17)
+
+    stat.get_longest('ciao', 'ciao')
+    stat.get_longest('banana', 'fish')
+
+    stat.check_value(100.122)
+    stat.check_value(101)
+
+
+
 if __name__ == '__main__':
     print_hi('Cosimo')
     print_hi("Inter")
@@ -67,3 +87,6 @@ if __name__ == '__main__':
 
     # String basics exercises
     mystring_function()
+
+    # Conditional exercises
+    myconditional_function()
