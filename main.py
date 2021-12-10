@@ -110,6 +110,27 @@ def mylist_function():
     lll.remove_duplicates([1, 1, 1, 11, 111, 2, 3456, '1', 1.9, 1])
     lll.contains_duplicate([1, 2], [1, 5])
     lll.multiply_list([1, 2, 3, 4], [2, 3, 4, 5])
+    lll.try_basic([3, 5, 7, 999, 23])
+    lll.permute([1, 2, 3, 4, 5])
+    lll.gen_list2()
+
+
+def mytuple_fuction():
+    import MyTuple
+    ttt = MyTuple
+    print("\n Esercizi  \n")
+
+    ttt.f_a(('fee', 'banana', 33, 99.07, 33, 56, 77, 44, 3))
+    ttt.check(('a', 1, 2, 3), 3)
+    ttt.convert([i**3 for i in range(0, 5)])
+    ttt.remove_item([i**3 for i in range(0, 5)], 2)
+    ttt.double_last([(10, 20, 40), (40, 50, 60), (70, 80, 90)])
+    ttt.generate_sentence(('I', 'You'), ('love', 'hate'), ('you', 'tequila'))
+    ttt.sort_tup([(17, 1, 44), (4, 55, 6), (99, 33, 33)],
+                 [(17, 8), (4, 55), (5, 22), (4, 11), (9, 9), (23, 11)],
+                 ['nicola', 'susanna', 'giovanni', 'pino', 'carla'])
+    ttt.sort_multilevel([('Tom', 19, 80), ('John', 20, 90), ('Jony', 17, 91), ('Jony', 17, 93), ('Json', 21, 85)])
+
 
 if __name__ == '__main__':
     print_hi('Cosimo')
@@ -126,3 +147,5 @@ if __name__ == '__main__':
     myiterative_function()
 
     mylist_function()
+
+    mytuple_fuction()

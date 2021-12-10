@@ -1,5 +1,8 @@
 # Given a list write a program to print the first half values in one line
 # and the last half values in a single line line.
+import itertools
+import random
+
 
 def divide(li):
     x = len(li)
@@ -94,3 +97,26 @@ def multiply_list(li1, li2):
     for i in range(0, len(li2)):
         new.append(li1[i] * li2[i])
     print(new)
+
+
+# sort,sorting, shuffle
+
+def try_basic(li):
+    print(li)
+    print(sorted(li, reverse=True))
+    li.sort()
+    random.shuffle(li)
+    print(li)
+
+
+# program which prints all permutations of [1,2,3]. Use itertools.permutations() to get permutations of list.
+
+def permute(li):
+    print(list(itertools.permutations(li)))
+
+
+# generate a list with 5 random numbers between 100 and 200 inclusive. Use random.sample()
+
+def gen_list2():
+    x = random.sample(range(100, 201), 5)
+    print(list(x))
