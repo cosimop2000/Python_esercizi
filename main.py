@@ -1,3 +1,4 @@
+import MyIterative
 import MyString
 import MyConditionalStatement
 
@@ -78,6 +79,20 @@ def myconditional_function():
     stat.check_value(101)
 
 
+def myiterative_function():
+    print("\n Esercizi  \n")
+    sss = MyIterative
+
+    sss.compute_100()
+    sss.pattern()
+    sss.factorial(5)
+    sss.divisible_7_print()
+    sss.pitagoric_table(10)
+    sss.dice_game('Cosimo', 'Luca')
+    sss.fibonacci(25)
+    sss.binary_search(list(range(1, 100, 3)), 11)
+    sss.binary_search([10, 32, 25, 3, 333, 9], 333)
+
 
 if __name__ == '__main__':
     print_hi('Cosimo')
@@ -90,3 +105,5 @@ if __name__ == '__main__':
 
     # Conditional exercises
     myconditional_function()
+
+    myiterative_function()
