@@ -94,6 +94,23 @@ def myiterative_function():
     sss.binary_search([10, 32, 25, 3, 333, 9], 333)
 
 
+def mylist_function():
+    print("\n Esercizi  \n")
+    import MyList
+    lll = MyList
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    lll.divide(li)
+    lll.divide([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    lll.duplicate(li)
+    lll.gen_list(20)
+    lll.gen_list1(200, 300)
+    lll.sort_list('banana,apple,strawberry,cherry,pineapple')
+    lll.longer_than(['banana', 'apple', 'strawberry', 'cherry', 'pineapple'], 8)
+    lll.remove_duplicates([1, 1, 1, 11, 111, 2, 3456, '1', 1.9, 1])
+    lll.contains_duplicate([1, 2], [1, 5])
+    lll.multiply_list([1, 2, 3, 4], [2, 3, 4, 5])
+
 if __name__ == '__main__':
     print_hi('Cosimo')
     print_hi("Inter")
@@ -107,3 +124,5 @@ if __name__ == '__main__':
     myconditional_function()
 
     myiterative_function()
+
+    mylist_function()
