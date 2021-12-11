@@ -143,6 +143,22 @@ def mydictionary_function():
     ddd.calculate('hello   world 123 45 6')
 
 
+def mycomprexc_function():
+    import MyComprEx
+    ccc = MyComprEx
+    print("\n")
+
+    ccc.filter_odd(100)
+    ccc.filter_even(100)
+    ccc.len_str(['nicola', ' fabio', ' luca', ' lucia', ' gianni'])
+    ccc.choice(1000)
+    ccc.remove_5_7([12, 24, 35, 70, 88, 120, 155])
+    ccc.remove_duplicates('hello world and practice makes perfect and hello world again')
+    ccc.f_a("the quick brown fox jumps over the lazy dog")
+    ccc.remove_el([12, 24, 35, 70, 88, 120, 155])
+    #ccc.remove_el([1])
+
+
 if __name__ == '__main__':
     print_hi('Cosimo')
     print_hi("Inter")
@@ -162,3 +178,5 @@ if __name__ == '__main__':
     mytuple_fuction()
 
     mydictionary_function()
+
+    mycomprexc_function()
