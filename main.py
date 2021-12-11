@@ -1,6 +1,11 @@
 import MyIterative
 import MyString
 import MyConditionalStatement
+from Classes.American import American, NewYorker
+from Classes.CaseString import CaseString
+from Classes.Person import Male
+
+from Classes.Shape import Shape, Square, Rectangle, Circle
 
 
 def print_hi(name):
@@ -156,7 +161,7 @@ def mycomprexc_function():
     ccc.remove_duplicates('hello world and practice makes perfect and hello world again')
     ccc.f_a("the quick brown fox jumps over the lazy dog")
     ccc.remove_el([12, 24, 35, 70, 88, 120, 155])
-    #ccc.remove_el([1])
+    # ccc.remove_el([1])
 
 
 if __name__ == '__main__':
@@ -180,3 +185,27 @@ if __name__ == '__main__':
     mydictionary_function()
 
     mycomprexc_function()
+
+    print('\n\n\n')
+    cs = CaseString('baNaNA')
+    cs1 = CaseString('banaAaaaa', True)
+
+    print(cs.get_string())
+    print(cs1.get_string())
+
+    American.get_nationality()
+    a = American()
+    b = NewYorker()
+    print(a, b)
+
+    shape = Shape()
+    square = Square(10)
+    rect = Rectangle(4, 5)
+    circle = Circle(5)
+    print(shape.get_name(), square.get_name(), rect.get_name(), circle.get_name())
+    print(square.print_perimeter(), '   ', square.print_area())
+    print(rect.print_perimeter(), '   ', rect.print_area())
+    print(circle.print_perimeter(), '   ', circle.print_area())
+
+    person = Male()
+    print(person.get_gender())
