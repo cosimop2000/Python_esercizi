@@ -73,3 +73,25 @@ def sort_multilevel(li):
     from operator import itemgetter
     x = sorted(li, key=itemgetter(2, 0, 1), reverse=True)
     print(x)
+
+
+# given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to
+# make a list whose elements are intersection of the above given lists.
+
+def intersect(li1, li2):
+    new = list(set(li1).intersection(set(li2)))
+    print(new)
+
+
+# given a list write a program to print this list after
+# removing all duplicate values with original order reversed.
+
+def remove_duplicate_set(li):
+    new = []
+    set_x = set()
+    for i in li:
+        if i not in set_x:
+            set_x.add(i)
+            new.append(i)
+    print(set_x)
+    print(sorted(new, reverse=True))

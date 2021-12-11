@@ -4,12 +4,10 @@ import MyConditionalStatement
 
 
 def print_hi(name):
-
     print(f'Hi, {name}')
 
 
 def print_prova():
-
     print("Iron Maiden" + ' : Run to the hills')
 
 
@@ -122,14 +120,27 @@ def mytuple_fuction():
 
     ttt.f_a(('fee', 'banana', 33, 99.07, 33, 56, 77, 44, 3))
     ttt.check(('a', 1, 2, 3), 3)
-    ttt.convert([i**3 for i in range(0, 5)])
-    ttt.remove_item([i**3 for i in range(0, 5)], 2)
+    ttt.convert([i ** 3 for i in range(0, 5)])
+    ttt.remove_item([i ** 3 for i in range(0, 5)], 2)
     ttt.double_last([(10, 20, 40), (40, 50, 60), (70, 80, 90)])
     ttt.generate_sentence(('I', 'You'), ('love', 'hate'), ('you', 'tequila'))
     ttt.sort_tup([(17, 1, 44), (4, 55, 6), (99, 33, 33)],
                  [(17, 8), (4, 55), (5, 22), (4, 11), (9, 9), (23, 11)],
                  ['nicola', 'susanna', 'giovanni', 'pino', 'carla'])
     ttt.sort_multilevel([('Tom', 19, 80), ('John', 20, 90), ('Jony', 17, 91), ('Jony', 17, 93), ('Json', 21, 85)])
+    ttt.intersect([i ** 3 for i in range(0, 5)], [1, 8, 345, 27, 222])
+    ttt.remove_duplicate_set([12, 24, 35, 24, 88, 120, 155, 88, 120, 155])
+
+
+def mydictionary_function():
+    import MyDictionary
+    ddd = MyDictionary
+
+    ddd.get_dict()
+    ddd.get_dict_v2([1, 2, 3, 4, 5], ['q', 'w', 'e', 'r', 't'])
+    ddd.gen_dict_v3(20)
+    ddd.count('Hello World      ')
+    ddd.calculate('hello   world 123 45 6')
 
 
 if __name__ == '__main__':
@@ -149,3 +160,5 @@ if __name__ == '__main__':
     mylist_function()
 
     mytuple_fuction()
+
+    mydictionary_function()
